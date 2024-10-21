@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web & Social Time Tracker</title>
+    <style>
+        body {
+            background-color: #003399; /* Blu bandiera europea */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        button {
+            background-color: #fff;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Tracker: Social vs Web</h1>
+        <p>Tempo sui Social: {{.SocialTime}} minuti</p>
+        <p>Tempo su altre Pagine Web: {{.WebTime}} minuti</p>
+
+        <button onclick="startTracking()">Inizia Tracciamento</button>
+        <button onclick="generateReport()">Genera Report</button>
+    </div>
+
+    <!-- Banner nella parte inferiore -->
+    <footer>
+        <img src="/static/banner.jpg" alt="Banner">
+    </footer>
+
+    <script>
+        // Funzione per avviare il tracciamento del tempo
+        function startTracking() {
+            alert('Tracciamento avviato!');
+            // Qui potrai aggiungere logica di tracciamento con JavaScript
+        }
+
+        // Funzione per generare il report
+        function generateReport() {
+            alert('Generazione del report...');
+            // Qui potrai inviare i dati al server per creare il report
+        }
+    </script>
+</body>
+</html>
